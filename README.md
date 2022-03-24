@@ -9,4 +9,3 @@ Project structure
 |
 ├── tests/
 │   └── __init__.py
-
