@@ -1,9 +1,5 @@
-
-<<<<<<< HEAD
 name: AgilObjects
 channels:
   - defaults
 dependencies:
   - flake8
-=======
->>>>>>> 8526dbc551b341a27a66b575c015392f2a3e9866
