@@ -37,8 +37,15 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: python -m unittest discover
+      
+      - run:
           name: run linting and metrics
-          command: flake8 ./ tests --output-file test-reports
+          command: |
+            . venv/bin/activate
+            flake8 ./ tests --output-file test-reports
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
