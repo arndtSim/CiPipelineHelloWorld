@@ -36,9 +36,11 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: |
-          python -m unittest discover
-          flake8 ./ tests --output-file test-reports
+          command: python -m unittest discover
+          
+          name: Run flake
+          # This assumes pytest is installed via the install-package step above
+          command: flake8 ./ tests --output-file test-reports
       - store_artifacts:
           path: test-reports
           destination: test-reports
