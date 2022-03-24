@@ -1,0 +1,6 @@
+
+name: AgilObjects
+channels:
+  - defaults
+dependencies:
+  - flake8
