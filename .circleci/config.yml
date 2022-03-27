@@ -40,7 +40,7 @@ jobs:
       
       - run:
           name: run linting and metrics
-          command: flake8 ./ --output-file test-reports
+          command: flake8 ./ --output-file test-reports  --enable-extensions E266
       - store_artifacts:
           path: test-reports
           destination: test-reports
