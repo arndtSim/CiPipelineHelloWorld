@@ -1,13 +1,13 @@
 import unittest
 from randomFunktions import my_sum
 
+
 ## @class TestMyTry
 # @brief Class for all unittests.
 #
 # This class provides several unittests for testing
 # each unit of the created code.
 class TestMyTry(unittest.TestCase):
-
 
     ## @brief tests easy summation
     def testSumEasy(self):
