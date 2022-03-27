@@ -1,6 +1,5 @@
 import unittest
-from randomFunktions import *
-from randomFunktions.my_sum import MyMathOperations
+from randomFunktions import my_sum
 
 ## @class TestMyTry
 # @brief Class for all unittests.
@@ -11,7 +10,7 @@ class TestMyTry(unittest.TestCase):
 
     ## @brief tests easy summation
     def testSumEasy(self):
-        self.assertEqual(MyMathOperations.sum([2, 5]), 7)
+        self.assertEqual(my_sum.sum([2, 5]), 7)
 
     ## @brief tests bad input types
     def test_bad_type(self):
